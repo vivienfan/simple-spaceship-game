@@ -20,7 +20,7 @@ const gameState = {
   create: () => {
     spacefield = game.add.tileSprite(0, 0, 800, 500, 'spacefield');
 
-    spaceship = game.add.sprite(game.world.centerX, 400, 'spaceship');
+    spaceship = game.add.sprite(game.world.centerX, 430, 'spaceship');
     spaceship.scale.setTo(0.2);
     spaceship.anchor.setTo(0.5, 0);
     game.physics.enable(spaceship, Phaser.Physics.ARCADE);
@@ -44,10 +44,14 @@ const gameState = {
     spacefield.tilePosition.y += bgSpeed;
     spaceship.body.velocity.x = 0;
 
-    if (cursors.left.isDown) {
+    if (cursors.left.isDown
+      && spaceship.body.position.x > 5) {
+    console.log(spaceship.body);
       spaceship.body.velocity.x = -350;
     }
-    if (cursors.right.isDown) {
+    if (cursors.right.isDown
+      && spaceship.body.position.x < 760) {
+    console.log(spaceship.body);
       spaceship.body.velocity.x = 350;
     }
 
@@ -68,8 +72,8 @@ const fireBullet = () => {
       bullet.anchor.setTo(0.5);
       bullet.scale.setTo(0.02);
       bullet.reset(spaceship.x, spaceship.y);
-      bullet.body.velocity.y -= 400;
-      bulletTime = game.time.now + 200;
+      bullet.body.velocity.y -= 500;
+      bulletTime = game.time.now + 100;
     }
   }
 }
