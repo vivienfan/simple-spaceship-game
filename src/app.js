@@ -89,7 +89,7 @@ const fireBullet = () => {
       bullet.scale.setTo(0.02);
       bullet.reset(spaceship.x, spaceship.y);
       bullet.body.velocity.y -= 500;
-      bulletTime = game.time.now + 400;
+      bulletTime = game.time.now + 300;
     }
   }
 }
