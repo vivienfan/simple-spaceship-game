@@ -1,4 +1,4 @@
-simple-spaceship-game
+Spaceship
 =====================
 Simple spaceship game using phaser library.
 
