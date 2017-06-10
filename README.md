@@ -1,7 +1,7 @@
 Spaceship
 =====================
 Simple spaceship game using phaser library.
-Try it out here (http://simple-spaceship.herokuapp.com/)
+Try it out [here](http://simple-spaceship.herokuapp.com)!
 
 ## Final Product
 
