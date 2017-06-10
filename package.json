@@ -17,7 +17,7 @@
     "url": "https://github.com/vivienfan/simple-spaceship-game/issues"
   },
   "homepage": "https://github.com/vivienfan/simple-spaceship-game#readme",
-  "devDependencies": {
+  "dependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
