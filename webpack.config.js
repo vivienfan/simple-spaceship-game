@@ -25,5 +25,9 @@ module.exports = {
         loader: 'sass-loader'
       }]
     }]
-  }
+  },
+  devServer: {
+    compress: true,
+    disableHostCheck: true
+ } 
 };
